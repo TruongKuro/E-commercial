@@ -1,0 +1,28 @@
+/* //LOGO */
+.logo-white-img,
+.logo-black-img {
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+    position: relative;
+}
+
+.logo-black-img {
+    color: var(--main);
+}
+
+.logo-white-span,
+.logo-black-span {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--white);
+    margin-left: 12px;
+    text-transform: uppercase;
+    font-stretch: semi-expanded;
+    font-family: Arial Black;
+    user-select: none;
+}
+
+.logo-black-span {
+    color: var(--text);
+}

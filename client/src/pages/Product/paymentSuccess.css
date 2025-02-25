@@ -1,0 +1,130 @@
+.payment-success-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(6, 0, 42);
+}
+.payment-success-card {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-success-header {
+    color: var(--white-hover);
+    border: 2px solid currentColor;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 30px 100px;
+    
+}
+
+.payment-success-btn {
+    color: #fff;
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    padding: 12px 0;
+    font-size: 18px;
+    width: 300px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.payment-success-btn:nth-child(2):hover {
+    color: rgb(255, 219, 119);
+    border-color: currentColor;
+    box-shadow: 0 0 50px rgba(255, 219, 119, 0.398);
+}
+.payment-success-btn:nth-child(3):hover {
+    color: rgb(119, 255, 235);
+    border-color: currentColor;
+    box-shadow: 0 0 50px rgba(119, 255, 237, 0.398);
+}
+.payment-success-btn:nth-child(4):hover {
+    color: rgb(142, 255, 119);
+    border-color: currentColor;
+    box-shadow: 0 0 50px rgba(146, 255, 119, 0.398);
+}
+.payment-success-btn:nth-child(5):hover {
+    color: rgb(255, 119, 119);
+    border-color: currentColor;
+    box-shadow: 0 0 50px rgba(255, 119, 119, 0.398);
+}
+.payment-success-bubbles {
+    position: relative;
+    display: flex;
+}
+
+.payment-success-bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #f55;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(255, 85, 85, 0.303),
+    0 0 50px #f55,
+    0 0 100px #f55;
+    animation: animate_payment_success 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.payment-success-bubbles span:nth-child(even){
+    background: rgb(22, 255, 247);
+    box-shadow: 0 0 0 10px rgba(22, 255, 247, 0.331),
+        0 0 50px rgb(22, 255, 247),
+        0 0 100px rgb(22, 255, 247);
+}
+
+.payment-success-bubbles span:nth-child(3),
+.payment-success-bubbles span:nth-child(6), 
+.payment-success-bubbles span:nth-child(9), 
+.payment-success-bubbles span:nth-child(12), 
+.payment-success-bubbles span:nth-child(15), 
+.payment-success-bubbles span:nth-child(18), 
+.payment-success-bubbles span:nth-child(21), 
+.payment-success-bubbles span:nth-child(24), 
+.payment-success-bubbles span:nth-child(27), 
+.payment-success-bubbles span:nth-child(30) {
+    background: rgb(112, 255, 93);
+    box-shadow: 0 0 0 10px rgba(112, 255, 93, 0.367),
+        0 0 50px rgb(112, 255, 93),
+        0 0 100px rgb(112, 255, 93);
+
+}
+
+.payment-success-bubbles span:nth-child(1),
+.payment-success-bubbles span:nth-child(5),
+.payment-success-bubbles span:nth-child(11),
+.payment-success-bubbles span:nth-child(16),
+.payment-success-bubbles span:nth-child(22),
+.payment-success-bubbles span:nth-child(23),
+.payment-success-bubbles span:nth-child(31),
+.payment-success-bubbles span:nth-child(34),
+.payment-success-bubbles span:nth-child(40){
+    background: rgb(255, 200, 71);
+    box-shadow: 0 0 0 10px rgba(255, 200, 71, 0.379),
+        0 0 50px rgb(255, 200, 71),
+        0 0 100px rgb(255, 200, 71);
+
+}
+
+@keyframes animate_payment_success 
+{
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}

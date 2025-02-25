@@ -1,0 +1,37 @@
+
+.card-input-anim {
+    position: relative;
+    width: 50%;
+}
+
+.input-anim {
+    
+    width: 100%;
+    outline: none;
+    caret-color: var(--blue-bg);
+}
+.input-anim:valid,
+.input-anim:focus {
+    border: 1px solid var(--blue-bg);
+}
+
+.input-anim:valid ~ .span-anim,
+.input-anim:focus ~ .span-anim {
+    color: var(--white);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 10px;
+    padding: 0 4px;
+    background-color: var(--blue-bg);
+    border-radius: 2px;
+    
+}
+
+.span-anim {
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+    font-size: 14px;
+    color: var(--boldGray);
+    transition: 0.5s;
+}

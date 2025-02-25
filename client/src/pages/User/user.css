@@ -1,0 +1,358 @@
+/* PROFILE */
+.profile-edit-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.profile-edit-img-btn {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    color: #000;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-edit-img-btn:hover {
+    border: 1px solid var(--main);
+}
+
+.profile-edit-img-btn:hover span {
+    color: var(--main);
+}
+
+.profile-edit-img-btn input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.profile-edit-img-btn input::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.profile-edit-img-btn span {
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.profile-edit-input {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-edit-input label {
+    width: 20%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    padding-left: 15px;
+}
+
+.profile-edit-input input {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 14px;
+    color: #000;
+}
+
+.profile-edit-item-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.profile-edit-item-checkbox + .profile-edit-item-checkbox {
+    margin-left: 25px;
+}
+.profile-edit-item-checkbox span {
+    line-height: 35px;
+    margin-left: 8px;
+}
+
+.profile-edit-item-checkbox-checked,
+.profile-edit-item-checkbox-outline {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #555; 
+}
+
+.profile-edit-item-checkbox-checked {
+    border: 1px solid var(--main);
+    position: relative;
+}
+
+.profile-edit-item-checkbox-checked::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--main);
+}
+
+.profile-edit-combobox-dob {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0 -5px;
+}
+
+.profile-edit-combobox-item {
+    width: calc(100% / 3);
+    margin: 0 5px;
+}
+
+.profile-edit-combobox-item select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ADDRESS */
+.account-container {
+    background-color: var(--white);
+    padding: 15px;
+    position: relative;
+}
+
+.btn-add-address {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px 15px 0 0;
+    padding: 8px 12px;
+}
+.address-list {
+    position: relative;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+}
+.address-list-item {
+    display: flex;
+    width: 100%;
+}
+
+.address-list-item p:first-child {
+    width: 25%;
+    text-align: right;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+
+.address-list-item p:last-child {
+    width: 75%;
+}
+
+.address-list-edit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--main);
+}
+
+.address-list-edit:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.address-blank {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.address-blank-content {
+    text-align: center;
+}
+
+.address-blank-content-icon {
+    font-size: 35px;
+    color: #666;
+}
+
+.address-blank-content p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+/* PASSWORD */
+.password-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-item p:first-child {
+    width: 25%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.password-item-input {
+    width: 25%;
+    position: relative;
+}
+
+.password-btn-save {
+    padding: 8px 12px;
+    margin-left: 25%;
+    margin-top: 15px;
+}
+
+/* ORDER TAB*/
+.order-tab {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.order-tab-item,
+.order-tab-item-active {
+    width: calc(100%/6);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.order-tab-item-active {
+    border-bottom: 2px solid var(--main);
+    color: var(--main);
+}
+.order-tab-item:hover,
+.order-tab-item-active:hover {
+    cursor: pointer;
+}
+
+
+
+/* ORDER ITEM*/
+
+.order-item-link-shop-icon {
+    color: var(--main);
+    margin-right: 8px;
+}
+
+.order-item-link-shop span {
+    font-weight: 600;
+}
+
+.order-status-successful-delivery {
+    color: rgb(0, 182, 55);
+    position: relative;
+}
+
+.order-status-successful-delivery span {
+    margin: 0 8px;
+}
+
+.order-status-reviewed {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 153, 0);
+}
+.order-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+.order-item-image {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.order-item-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.order-item-content {
+    width: calc(100% - 80px);
+    margin-left: 15px;
+}
+
+.order-item-content-price-old {
+    color: #999;
+    text-decoration:line-through;
+}
+
+.order-list-content-price-new {
+    color: var(--main);
+    margin-left: 8px;
+}
+
+.order-item-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.order-item-bottom-total-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.order-item-bottom-total-price svg {
+    color: var(--main);
+    margin-right: 8px;
+}
+.order-item-bottom-total-price p {
+    font-size: 22px;
+    color: var(--main);
+    margin-left: 12px;
+}
+.order-item-bottom-total-price p span {
+    font-size: 16px;
+    text-decoration: underline;
+    margin-right: 2px;
+}
+
+.order-item-bottom-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 15px;
+
+}

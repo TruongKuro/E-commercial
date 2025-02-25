@@ -1,0 +1,60 @@
+.modal-review {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+}
+
+.modal-review-list-product {
+    width: 40%;
+    overflow: scroll;
+}
+
+.modal-review-item-product {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #ccc;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-review-item-product-image {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-review-item-product-image img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.modal-review-item-product-name {
+    margin-left: 8px;
+}
+
+.modal-review-main {
+    width: 60%;
+}
+
+.modal-review-list-star {
+    display: flex;
+    justify-content: center;
+}
+.modal-review-list-star img{
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.modal-review-main textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-top: 25px;
+}
+
+.modal-review-main button {
+
+}

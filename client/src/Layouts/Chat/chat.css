@@ -1,0 +1,245 @@
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--gray);
+    border: 1px solid var(--gray);
+    background-clip: content-box;
+}
+
+.chat-container {
+    height: 400px;
+    width: 600px;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 15px;
+    box-shadow: 1px 1px 1px 3px rgb(223, 223, 223);
+}
+
+.chat-header {
+    padding: 8px;
+}
+
+.chat-header span {
+    font-size: 16px;
+    color: var(--main);
+    font-weight: 600;
+}
+
+.chat-header svg {
+    font-size: 16px;
+    color: #999;
+}
+
+.chat-header svg:hover {
+    cursor: pointer;
+    color:var(--main);
+}
+
+.chat-body {
+    height: 100%;
+    display: flex;
+}
+.chat-list,
+.chat-main {
+    height: 100vh;
+    
+}
+
+.chat-list{
+    width: 40%;
+    overflow: scroll;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.chat-list-item {
+    display: flex; 
+}
+
+.chat-list-item + .chat-list-item {
+    margin-top: 8px;
+}
+
+.chat-list-item:hover,
+.chat-list-item-click{
+    background-color: var(--white-hover);
+    cursor: pointer;
+}
+
+.chat-list-item-img {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.chat-list-item-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.chat-list-item-content {
+    width: 100%;
+    padding: 0 8px;
+}
+.chat-list-item-content span:first-child{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    align-items: center;
+    height: 25px;
+}
+
+.chat-list-item-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+}
+
+.chat-list-item-content-bottom span:first-child {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    
+}
+
+.chat-list-item-content-bottom span:last-child {
+    font-size: 12px;
+    color: #999;
+}
+
+.chat-main {
+    width: 60%;
+    max-height: 100vh;
+    border-top: 1px solid #ccc;
+    display: grid;
+    height: inherit;
+    grid-template-rows: 40px auto 120px;
+}
+
+.chat-main-header {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+.chat-main-header-wrap {
+    cursor: pointer;
+    width: fit-content;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.chat-main-header-wrap span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.chat-main-header-wrap svg {
+    font-size: 12px;
+    color: #999;
+    margin-left: 8px;
+}
+
+.chat-main-body {
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-main-body-item-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.chat-main-body-item-right-content,
+.chat-main-body-item-left-content {
+    width: fit-content;
+    border-radius: 4px;
+    padding: 8px;  
+    font-size: 14px;
+}
+.chat-main-body-item-right-content {
+    margin: 4px 4px 4px 30px;
+    background-color: rgb(148, 180, 255);
+}
+.chat-main-body-item-left-content {
+    margin: 4px 30px 4px 4px;
+    background-color: rgb(211, 211, 211);
+}
+.chat-main-footer {
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-main-footer input {
+    width: 100%;
+    border: none;
+}
+
+.chat-main-footer-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.chat-main-footer-action-left i,
+.chat-main-footer-action-right i{
+    font-size: 15px;
+    color: #999;
+    position: relative;
+}
+.chat-main-footer-action-left i:hover {
+    cursor: pointer;
+    color: rgb(0, 110, 255);
+}
+.chat-main-footer-action-left i + i {
+    margin-left: 10px;
+}
+.chat-main-footer-action-left i input {
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.chat-main-footer input:not(:placeholder-shown) +
+.chat-main-footer-action
+.chat-main-footer-action-right i {
+    color: var(--main);
+    cursor: pointer;
+}
+
+.chat-main-tippy {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 4px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.chat-main-tippy::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent ;
+    border-right: 5px solid transparent ;
+    border-top: 10px solid rgba(0, 0, 0, 0.808); ;
+}
